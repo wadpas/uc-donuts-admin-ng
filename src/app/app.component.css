@@ -1,0 +1,15 @@
+.app {
+  background: white;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 94%;
+  margin: 25px auto;
+  padding: 25px;
+  border: 4px solid pink;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
