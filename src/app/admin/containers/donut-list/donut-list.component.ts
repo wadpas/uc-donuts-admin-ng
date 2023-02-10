@@ -36,5 +36,8 @@ export class DonutListComponent implements OnInit {
       }
     ]
   }
+  userTrackBy(index: number, donut: Donut) {
+    return donut.id;
+  }
 
 }
