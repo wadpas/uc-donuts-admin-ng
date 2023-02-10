@@ -17,21 +17,21 @@ export class DonutListComponent implements OnInit {
         id: 'i3F82j',
         name: 'Strawberry Rainbow',
         icon: 'strawberry-rainbow',
-        price: 1.19,
+        price: 119,
         description: 'Strawberry Icing & Rainbow Sprinkles'
       },
       {
         id: 'b8s4L6',
         name: 'Speculoos Sensation',
         icon: 'speculoos-sensation',
-        price: 1.39,
+        price: 139,
         description: 'Caramel Filled, Caramel Icing, Speculoos Crumb & Biscuit, Chocolate & Vanilla Drizzle'
       },
       {
         id: 'h3S9f6',
         name: 'Rainbow Fruit',
         icon: 'rainbow-fruit',
-        price: 1.29,
+        price: 129,
         description: 'Strawberry Filled, Vanilla Icing & Chewy Fruity Rainbow Candies'
       }
     ]
