@@ -2,18 +2,23 @@
   background-color: #f7f7f7;
   border: 2px solid transparent;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 10px;
   outline: 0;
-  width: 88%;
+  width: 92%;
   font-size: 14px;
+  font-family: "Segoe UI";
   font-weight: bold;
   color: #444;
+}
+
+.select-input {
+  width: 100%;
 }
 
 .donut-form-radios {
   display: flex;
   align-content: center;
-  margin-top: 5px;
+  margin: 10px auto;
 }
 
 .donut-form-radios-label {

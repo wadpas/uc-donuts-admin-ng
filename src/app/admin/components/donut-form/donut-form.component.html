@@ -4,6 +4,12 @@
         <input type="text" name="name" class="input" ngModel>
     </label>
     <label>
+        <span>Icon</span>
+        <select name="icon" class="input select-input" ngModel>
+            <option *ngFor="let icon of icons" [ngValue]="icon">{{ icon }}</option>
+        </select>
+    </label>
+    <label>
         <span>Price</span>
         <input type="text" name="price" class="input" ngModel>
     </label>
@@ -22,4 +28,8 @@
             <span>Limited</span>
         </label>
     </div>
+    <label>
+        <span>Description</span>
+        <textarea name="description" class="input"></textarea>
+    </label>
 </form>

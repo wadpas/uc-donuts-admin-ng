@@ -9,6 +9,15 @@ import { Donut } from '../../models/donut.model';
 export class DonutCardComponent {
   @Input() donut!: Donut;
 
+  icons: string[] = [
+    'cookie-cream-blast',
+    'speculoos-sensation',
+    'strawberry-rainbow',
+    'mr-happy',
+    'rainbow-fruit',
+    'maple-chocolate'
+  ];
+
   constructor() { }
 
 

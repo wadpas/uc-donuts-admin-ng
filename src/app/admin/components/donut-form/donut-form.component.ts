@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonutFormComponent implements OnInit {
 
+  icons: string[] = [
+    'cookie-cream-blast',
+    'speculoos-sensation',
+    'strawberry-rainbow',
+    'mr-happy',
+    'rainbow-fruit',
+    'maple-chocolate'
+  ];
+
+
   constructor() { }
 
   ngOnInit(): void {
