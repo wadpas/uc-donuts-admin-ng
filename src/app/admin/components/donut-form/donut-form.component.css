@@ -1,0 +1,26 @@
+.input {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 10px 15px;
+  outline: 0;
+  width: 88%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.donut-form-radios {
+  display: flex;
+  align-content: center;
+  margin-top: 5px;
+}
+
+.donut-form-radios-label {
+  margin-right: 10px;
+}
+
+.donut-form-radios span {
+  margin-right: 10px;
+  color: #444;
+}

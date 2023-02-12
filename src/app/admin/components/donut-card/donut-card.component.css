@@ -5,26 +5,32 @@
   border-radius: 5px;
   margin-top: 5px;
   padding: 5px 15px;
-  transition: transform 0.2s ease-in-out;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-}
-
-.donut-card :hover {
-  transform: translateY(-3px);
 }
 
 .donut-card-name {
-  font-size: 16px;
+  font-size: 14px;
   color: #f5821f;
 }
 
+.donut-card-label {
+  border: 1px solid #e11383;
+  border-radius: 4px;
+  padding: 0 4px;
+  margin-left: 5px;
+  font-size: 10px;
+  color: #e11383;
+}
+
 .donut-card-price {
-  font-size: 14px;
+  font-size: 12px;
   color: #e11383;
 }
 
 .donut-card-icon {
   width: 60px;
   margin-right: 10px;
+}
+
+.donut-card-icon-div :hover {
+  transform: translateY(-3px);
 }

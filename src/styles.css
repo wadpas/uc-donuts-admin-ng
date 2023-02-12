@@ -1,7 +1,9 @@
 body {
   background: #e11383;
+  font-family: "Segoe UI";
+  color: #f5821f;
+  font-weight: bold;
 }
-
 p {
-  margin: 0px;
+  margin: 0;
 }
