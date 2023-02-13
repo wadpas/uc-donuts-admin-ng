@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Donut } from '../../models/donut.model';
 
 @Component({
   selector: 'app-donut-form',
   templateUrl: './donut-form.component.html',
   styleUrls: ['./donut-form.component.css']
 })
-export class DonutFormComponent implements OnInit {
+export class DonutFormComponent {
+
+  @Input() donut!: Donut
+  @Output() create = new EventEmitter<Donut>();
 
   icons: string[] = [
     'cookie-cream-blast',
@@ -19,7 +24,9 @@ export class DonutFormComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  handleSubmit(form: NgForm) {
+    if (form.valid) {
+      this.create.emit(form.value)
+    }
   }
-
 }
