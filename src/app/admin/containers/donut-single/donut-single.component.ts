@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Donut } from '../../models/donut.model';
+import { DonutService } from '../../services/donut.service';
 
 @Component({
   selector: 'app-donut-single',
@@ -9,20 +10,22 @@ import { Donut } from '../../models/donut.model';
 export class DonutSingleComponent implements OnInit {
   donut!: Donut;
 
-  constructor() { }
+  constructor(private donutService: DonutService) { }
 
   ngOnInit(): void {
-    this.donut = {
-      id: 'b8s4L6',
-      name: 'Speculoos Sensation',
-      icon: 'speculoos-sensation',
-      price: 139,
-      promo: 'new',
-      description: 'Caramel Filled, Caramel Icing, Speculoos Crumb & Biscuit, Chocolate & Vanilla Drizzle'
-    };
+    this.donut = this.donutService.readOne('b8s4L6');
   }
 
   onCreate(donut: Donut) {
-    console.log('onCreate', donut)
+    this.donutService.crete(donut);
+
   }
-}
+
+  onUpdate(donut: Donut) {
+    this.donutService.update(donut);
+  }
+
+  onDelete(donat: Donut) {
+    this.donutService.delete(donat);
+  }
+} 
