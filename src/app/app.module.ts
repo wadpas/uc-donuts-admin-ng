@@ -4,7 +4,23 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminModule } from './admin/admin.module';
+import { RouterModule, Routes } from '@angular/router';
+
+export const routes: Routes = [
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(x => x.AdminModule)
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'admin',
+  },
+  {
+    path: '**',
+    redirectTo: 'admin'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -13,8 +29,8 @@ import { AdminModule } from './admin/admin.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
