@@ -1,5 +1,5 @@
 <div>
-    <ng-container *ngIf="donuts.length; else nothing">
+    <ng-container *ngIf="donuts?.length; else nothing">
         <app-donut-card *ngFor="let donut of donuts" [donut]="donut"></app-donut-card>
     </ng-container>
     <ng-template #nothing>
