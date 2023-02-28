@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "uc-angular-basics-course": {
+    "uc-donuts-admin-ng": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/uc-angular-basics-course",
+            "outputPath": "dist/uc-donuts-admin-ng",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,10 +63,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "uc-angular-basics-course:build:production"
+              "browserTarget": "uc-donuts-admin-ng:build:production"
             },
             "development": {
-              "browserTarget": "uc-angular-basics-course:build:development"
+              "browserTarget": "uc-donuts-admin-ng:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "uc-angular-basics-course:build"
+            "browserTarget": "uc-donuts-admin-ng:build"
           }
         },
         "test": {

@@ -25,10 +25,7 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require("path").join(
-        __dirname,
-        "./coverage/uc-angular-basics-course"
-      ),
+      dir: require("path").join(__dirname, "./coverage/uc-donuts-admin-ng"),
       subdir: ".",
       reporters: [{ type: "html" }, { type: "text-summary" }],
     },
