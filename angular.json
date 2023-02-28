@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "motto-angular-basics-course": {
+    "uc-angular-basics-course": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/motto-angular-basics-course",
+            "outputPath": "dist/uc-angular-basics-course",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,10 +63,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "motto-angular-basics-course:build:production"
+              "browserTarget": "uc-angular-basics-course:build:production"
             },
             "development": {
-              "browserTarget": "motto-angular-basics-course:build:development"
+              "browserTarget": "uc-angular-basics-course:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "motto-angular-basics-course:build"
+            "browserTarget": "uc-angular-basics-course:build"
           }
         },
         "test": {
