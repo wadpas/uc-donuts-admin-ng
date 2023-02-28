@@ -56,9 +56,11 @@
             </div>
         </ng-container>
     </label>
-    <button type="button" class="btn" [disabled]="form.invalid" (click)="handleCreate(form)">Create</button>
-    <button type="button" class="btn" [disabled]="form.invalid" (click)="handleUpdate(form)">Update</button>
-    <button type="button" class="btn" (click)="handleDelete()">Delete</button>
+    <button *ngIf="!isEdit" type="button" class="btn" [disabled]="form.invalid"
+        (click)="handleCreate(form)">Create</button>
+    <button *ngIf="isEdit" type="button" class="btn" [disabled]="form.invalid"
+        (click)="handleUpdate(form)">Update</button>
+    <button *ngIf="isEdit" type="button" class="btn" (click)="handleDelete()">Delete</button>
     <div class="donut-form-working" *ngIf="form.valid && form.submitted">
         Working..
     </div>
